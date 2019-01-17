@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="css/kecheng.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/kechengList.js" type="text/javascript" charset="utf-8"></script>
+		<title>前端开发_web前端开发_前端开发视频教程_慕课网</title>
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				<div class="header-center clearfix">
+					<a href="javascript:;" class="logo fl">
+						<img src="img/下载.png">
+					</a>
+					<a href="javascript:;" class="app-load fr">
+						<span>下载客户端</span>
+					</a>
+					<a href="javascript:;" class="user fr">
+						<i class="fa fa-user-circle"></i>
+					</a>
+					<i class="fa fa-search header-search fr" aria-hidden="true" id="header-search"></i>
+					<form class="search-box" style="display: none;">
+						<div class="search-input">
+							<input type="text" placeholder="请输入搜索关键词" />
+							<div class="search-btn fr">
+								<i class="fa fa-search fr header-search" aria-hidden="true"></i>
+							</div>
+						</div>
+						<a href="javascript:;" class="quxiao fr">取消</a>
+					</form>
+				</div>
+			</div>
+			<div class="search-record" style="display: none;">
+				<div class="search-hot-box">
+					<p class="search-tit">热门搜索</p>
+					<dl class="clearfix">
+						<dd><a href="javascript:;">java</a></dd>
+						<dd><a href="javascript:;">phython</a></dd>
+						<dd><a href="javascript:;">vue</a></dd>
+						<dd><a href="javascript:;">spring</a></dd>
+						<dd><a href="javascript:;">小程序</a></dd>
+						<dd><a href="javascript:;">Linux</a></dd>
+						<dd><a href="javascript:;">react</a></dd>
+						<dd><a href="javascript:;">mysql</a></dd>
+						<dd><a href="javascript:;">微信小程序</a></dd>
+					</dl>
+				</div>
+				<a href="javascript:;" class="search-type">查看课程分类</a>
+			</div>
+			<div class="wraper">
+				<div class="container">
+					<div class="header-menu">
+						<ul class="clearfix">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="cur">
+								<a href="kecheng.html?articleId=1" style="color: #FF2D50;">课程</a>
+								<div class="line"></div>
+							</li>
+							<li>
+								<a href="jiuyeban.html">就业班</a>
+							</li>
+							<li>
+								<a href="shizhan.html">实战</a>
+							</li>
+							<li>
+								<a href="shouji.html">手记</a>
+							</li>
+							<li>
+								<a href="yuanwen.html">猿问</a>
+							</li>
+						</ul>
+					</div>
+					<div class="course-block clearfix">
+						<!-- 左边 -->
+						<div class="asideLeft">
+							<ul>
+								<li><a href="kecheng.html?articleId=0" target="_self">前沿技术</a></li>
+								<li class="active"><a href="kecheng.html?articleId=1" target="_self">前端开发</a></li>
+								<li><a href="kecheng.html?articleId=2" target="_self">后端开发</a></li>
+								<li><a href="kecheng.html?articleId=3" target="_self">移动开发</a></li>
+								<li><a href="kecheng.html?articleId=4" target="_self" class="acc">算法&amp;数学</a></li>
+								<li><a href="kecheng.html?articleId=5" target="_self" class="acc">云计算<br>&amp;大数据</a></li>
+								<li><a href="kecheng.html?articleId=6" target="_self" class="acc">运维<br>&amp;测试</a></li>
+								<li><a href="kecheng.html?articleId=7" target="_self">数据库</a></li>
+								<li><a href="kecheng.html?articleId=8" target="_self" class="acc">UI设计<br>&amp;多媒体</a></li>
+								<li><a href="kecheng.html?articleId=9" target="_self">游戏</a></li>
+							</ul>
+						</div>
+						<!-- 右边 -->
+						<div class="rightContent">
+							<div class="div1">
+								<!--基础-->
+								<p class="title">基础</p>
+								<ul class="wbbClass clearfix jichu">
+
+								</ul>
+								<!--进阶-->
+								<p class="title title1">进阶</p>
+								<ul class="wbbClass clearfix jinjie">
+
+
+								</ul>
+								<!--基础/进阶,的通用模板-->
+								<div class="moban1" style="display: none;">
+									<li>
+										<figure>
+											<img src="img/img1/01.jpg">
+										</figure>
+										<figcaption>$title$</figcaption>
+									</li>
+								</div>
+
+								<!--学习课程列表-->
+								<ul class="dixiacontent">
+
+
+
+								</ul>
+								<!--学习课程列表的模板-->
+								<div class="moban2" style="display: none;">
+									<li class="clearfix">
+										<div class="ContenLEf">
+											<img src="img/img1/01.jpg">
+										</div>
+										<div class="ContenR">
+											<p class="tit">$creatByFullName$</p>
+											<p>
+												<span>$describe$</span>
+												<span>$title$ </span>
+											</p>
+										</div>
+									</li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/toubu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/kecheng.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="css/yuanwen.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/newList.js" type="text/javascript" charset="utf-8"></script>
+		<title>慕课网猿问-最新</title>
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				<div class="header-center clearfix">
+					<a href="javascript:;" class="logo fl">
+						<img src="img/下载.png">
+					</a>
+					<a href="javascript:;" class="app-load fr">
+						<span>下载客户端</span>
+					</a>
+					<a href="javascript:;" class="user fr">
+						<i class="fa fa-user-circle"></i>
+					</a>
+					<i class="fa fa-search header-search fr" aria-hidden="true" id="header-search"></i>
+					<form class="search-box" style="display: none;">
+						<div class="search-input">
+							<input type="text" placeholder="请输入搜索关键词" />
+							<div class="search-btn fr">
+								<i class="fa fa-search fr header-search" aria-hidden="true"></i>
+							</div>
+						</div>
+						<a href="javascript:;" class="quxiao fr">取消</a>
+					</form>
+				</div>
+			</div>
+			<div class="search-record" style="display: none;">
+				<div class="search-hot-box">
+					<p class="search-tit">热门搜索</p>
+					<dl class="clearfix">
+						<dd><a href="javascript:;">java</a></dd>
+						<dd><a href="javascript:;">phython</a></dd>
+						<dd><a href="javascript:;">vue</a></dd>
+						<dd><a href="javascript:;">spring</a></dd>
+						<dd><a href="javascript:;">小程序</a></dd>
+						<dd><a href="javascript:;">Linux</a></dd>
+						<dd><a href="javascript:;">react</a></dd>
+						<dd><a href="javascript:;">mysql</a></dd>
+						<dd><a href="javascript:;">微信小程序</a></dd>
+					</dl>
+				</div>
+				<a href="javascript:;" class="search-type">查看课程分类</a>
+			</div>
+			<div class="wraper">
+				<div class="container">
+					<div class="header-menu">
+						<ul class="clearfix">
+							<li>
+								<a href="index.html">首页</a>
+								<!-- <div class="line"></div> -->
+							</li>
+							<li>
+								<a href="kecheng.html?articleId=1">课程</a>
+							</li>
+							<li>
+								<a href="jiuyeban.html">就业班</a>
+								
+							</li>
+							<li>
+								<a href="shizhan.html">实战</a>
+							</li>
+							<li>
+								<a href="shouji.html">手记</a>
+							</li>
+							<li>
+								<a href="yuanwen.html" class="cur">猿问</a>
+								<div class="line"></div>
+							</li>
+						</ul>
+					</div>
+					<!-- 推荐分类 -->
+					<div class="wenda-wrap">
+						<div class="fixed-wrap">
+							<div class="cbk-block">
+								<div class="tuijian">
+									<div class="tuijian-title clearfix">
+										<span class="fl">推荐分类</span>
+										<i class="fa fa-angle-right jiantou fr"></i>
+										<a href="javascript:;" class="fr more">全部分类</a>
+									</div>
+									<div class="tuijan-list clearfix">
+										<li class="ct1 fl"><a href="javascript:;">Html5</a></li>
+										<li class="ct1 fl"><a href="javascript:;">AngularJS</a></li>
+										<li class="ct1 fl"><a href="javascript:;">CSS3</a></li>
+										<li class="ct1 fl"><a href="javascript:;">Sass/Less</a></li>
+										<li class="ct1 fl"><a href="javascript:;">JAVA</a></li>
+										<li class="ct1 fl"><a href="javascript:;">Python</a></li>
+										<li class="ct1 fl"><a href="javascript:;">Go</a></li>
+										<li class="ct1 fl"><a href="javascript:;">C++</a></li>
+									</div>
+								</div>
+							</div>
+							<div class="list-nav">
+								<div class="nav-block">
+									<a href="yuanwen.html"><span>推荐</span></a>
+								</div>
+								<div class="nav-block active-nav">
+									<a href="new.html"><span>最新</span></a>
+								</div>
+								<div class="nav-block">
+									<a href="daihuifu.html"><span>待回复</span></a>
+								</div>
+								<div class="nav-block">
+									<a href="huati.html"><span>话题</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="list-wrap">
+							<ul class="list-w" id="articlelist">
+								<!-- 动态添加的内容 -->
+							</ul>
+							<!-- 模板 -->
+							<div id="itemHtml" style="display: none;">
+								<li class="wd-block clearfix" articleFl="$articleFl$" articleId="$articleId$">
+									<a href="javascript:;">
+										<div class="left-block fl" style="background-image:url(imgs/09.jpg);"></div>
+									</a>
+									<div class="right-block fl $articleClass$">
+										<p class="r-c-txt">
+											<span>$articleLz$</span>
+											<span class="r-c-from">$articleFrom$</span>
+											<span>$articleAwn$</span>
+										</p>
+										<div class="r-c-content">$articleContent$</div>
+										<p class="rs-tip">$articleTip$</p>
+										<div class="rs-answer">$articleAnswer$</div>
+										<div class="btns">
+											<a href="javascript:;" class="huida">
+												<i class="fa fa-gg" aria-hidden="true" ></i>
+												<span>$articleFa$</span>
+											</a>
+											<a href="javascript:;" class="hudong">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<span class="gz-txt">$articleTxt$</span>
+											</a>
+										</div>
+									</div>	
+								</li>
+							</div>
+							<!-- 模板结束 -->
+							<div class="more-block">
+								<a href="javascript:;">
+									点击加载更多
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/new.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/toubu.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

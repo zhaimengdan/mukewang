@@ -1,0 +1,21 @@
+//头部的显示隐藏
+$(function(){
+	$('#header-search').click(function(){
+		$(this).hide()
+		$('.logo').hide()
+		$('.app-load').hide()
+		$('.user').hide()
+		$('.search-box').show()
+		$('.search-record').show()
+		$('.wraper').hide()
+	})
+	$('.quxiao').click(function(){
+		$('.search-box').hide()
+		$('.search-record').hide()
+		$('.logo').show()
+		$('.app-load').show()
+		$('.user').show()
+		$('#header-search').show()
+		$('.wraper').show()
+	})
+})
